@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Jason the Black Panther | Billiards Channel</title> 
+  <link rel="stylesheet" href="style.css"> 
+  <link rel="icon" href="websitelogo.jpg" type="image/jpeg">
+</head> 
+<body> 
+  <header> 
+    <h1>Jason the Black Panther Sentillas</h1> 
+    <p>Master of the Cue | Billiards YouTube Channel</p> 
+  </header> 
+
+  <section class="about"> 
+    <h2>🎱 About Jason</h2> 
+    <p>Welcome to Jason the Black Panther's official site! I'm a Filipino billiards enthusiast who brings trick shots, tutorials, and cue ball magic straight from the streets to YouTube.</p> 
+  </section> 
+
+  <section class="videos"> 
+    <h2>📺 Featured Video</h2>
+    <iframe 
+      src="https://www.youtube.com/embed/0-J_9ixU9xs" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen>
+    </iframe>
+    
+    <p>
+      <a href="https://youtube.com/@jasonsentillasofficial510" target="_blank" class="yt-link-cue">
+        🎱 Visit my YouTube channel →
+      </a>
+    </p>
+
+    <!-- Billiard ball button -->
+    <div class="video-button-wrapper">
+      <button class="billiard-ball-button" onclick="document.getElementById('playlist').style.display='block'">
+        🎱 Show All Videos
+      </button>
+    </div>
+
+    <div id="playlist" style="display:none; margin-block-start: 1em;">
+      <iframe 
+        width="100%" 
+        height="400" 
+        src="https://www.youtube.com/embed/videoseries?list=PLzEzYZvmGNLkMaXgSaRfnpJMoTestSample" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section> 
+
+  <section class="contact"> 
+    <h2>📩 Contact or Subscribe</h2> 
+    <p>Want to collaborate or send a challenge? Drop a message below:</p> 
+    <input type="text" id="name" placeholder="Your Name" required> 
+    <input type="text" id="contact" placeholder="Your Number" required>        
+    <input type="email" id="email" placeholder="Your Email" required> 
+    <textarea id="shoutout" placeholder="Shoutout"></textarea> 
+    <button onclick="sendMessage()">Send</button> 
+  </section> 
+
+  <footer>
+    © 2025 Jason the Black Panther | Billiards Content Creator 
+  </footer> 
+
+  <script src="script.js"></script> 
+</body>
+</html>
